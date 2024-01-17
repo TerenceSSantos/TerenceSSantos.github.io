@@ -1,103 +1,235 @@
-body{
-    margin: 0%;
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: space-evenly;
-    flex-wrap: wrap;
-    font-family: 'Audiowide', cursive;
+#nav {
+	display: flex;
+	font-weight: 600;
+	justify-content: space-around;
+	background-color: aliceblue;
+	flex-wrap: nowrap;
+	height: 60px;
+	align-items: center;
+	box-shadow: 0 0 4px rgb(30, 50, 109);
+	position: sticky;
+	top: 0;
+	/*z-index: 1;*/
 }
 
-.sec-header{
-    background:linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
-    display: flexbox;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: solid blueviolet 0.5px;
-    box-shadow: black 0px 0px 15px 1px;
+.links {
+	height: 100%;
+	list-style: none;
 }
 
-.nome-prof{
-    display: flex;
-    align-content: space-between;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10%;
-    padding: 0.5%;
-    flex: 4;
-    flex-wrap: wrap;
-    min-width: 450px;
-    font-size: 0.8rem;
+.links a {
+	display: flex;
+	text-decoration: none;
+	height: 100%;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding: 0 10px;
+	color: blue;
 }
 
-.nome-prof h1{
-    font-size: 2.5em;
+.links a:hover {
+	background-color: rgb(181, 250, 250);
+	color: navy;
 }
 
-.nome-prof h2{
-    /*color: transparent; 
-    background-image: linear-gradient(90deg, #FFFF00 0%, #FF3B00 100%); 
-    background-clip: text;*/
+.links2 a{
+	text-decoration: none;
+}
+#hero {
+	display: flex;
+	background-image: linear-gradient(90deg, rgba(196, 197, 230, 0.85), rgba(196, 197, 230, 0.5)), url("./faz-tudo.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-attachment: fixed;
+	/*max-height: 90vh;*/
 }
 
-.foto{
-    min-width: 200px;
-    padding: 0.5%;
-    flex: 1;
-    /*border: solid salmon;*/
-    text-align: center;
+#div-objetivos {
+	width: 50%;
+	padding: 15% 7%;
 }
 
-.corpo{
-    /*margin: 2%;*/
-    display: flex;
-    flex-wrap: wrap;
+#div-objetivos ul {
+	list-style-type: none;
 }
 
-.corpo a{
-    text-decoration: none;
+#div-objetivos ul li{
+	margin-top: 20px;
 }
 
-.esquerda{
-    background-color: rgb(148, 212, 191);
-    padding: 20px;
-    flex: 1.5;
-    border-radius: 25px 25px 0% 0%;
-    box-shadow: gray 0 0 15px 1px;
-    margin: 25px 25px;
+#div-foto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 50%;
 }
 
-.esquerda h1, h2, h3{
-    color: darkblue;
-    font-family: 'Audiowide', cursive;
+#div-foto img {
+	max-width: 100%;
+	height: auto;
+	max-height: 70vh;
+	border-radius: 45%;
+	margin: 50px 25px;
 }
 
-.direita{
-	background: cadetblue;
-    padding: 20px;
-    flex: 3;
-    border-radius: 25px 25px 0% 0%;
-    /*border-top-left-radius: 25px;*/
-    box-shadow: gray 0 0 15px 1px;
-    margin: 25px 25px;
-    min-width: 300px;
+#education {
+	background-image: linear-gradient(90deg, rgba(230, 219, 196, 0.65), rgba(196, 197, 230, 0.5)), url("./formandos_1920x1280.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 5% 7%;
 }
 
-.exp-profissional{
-    text-align: justify;
+strong {
+	color: maroon;
 }
 
-span{
-    font-weight: 600;
+#div-segundo-grau,
+#div-faculdade {
+	margin-left: 50%;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#education h2 {
+	color: navy;
+	margin: 20px 0;
+}
+
+#education p {
+	color: darkmagenta;
+	background-color: rgba(240, 248, 255, 0.15);
+}
+
+#div-cursos {
+	margin-top: 50px;
+	padding-top: 50px;
+	margin-right: 50%;
+}
+
+#div-cursos h3 {
+	color: navy;
+	margin-top: 30px;
+}
+
+#exp-profissional {
+	background-image: linear-gradient(90deg, rgba(241, 206, 206, 0.65), rgba(241, 206, 206, 0.65)), url("./idea-g53dc11092_1920.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 5% 7%;
+}
+
+#exp-profissional h2{
+	color: navy;
+	margin-top: 30px;
+}
+
+#exp-profissional p{
+	color: blue;
+	/*text-shadow: 0 0 3px rgb(255, 255, 255);*/
+	background-color: rgba(240, 248, 255, 0.2);
+	font-size: 1.1em;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: navy;
+	font-family: 'Audiowide', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#rodape{
+	background-image: linear-gradient(90deg, rgba(241, 206, 206, 0.65), rgba(241, 206, 206, 0.65)), url("./contato_1920x1099.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	padding: 5% 7%;
+	line-height: 1.8em;
+	font-size: 1.5em;
+}
+
+address {
+	display: inline-block;
+}
+
+address a {
+	color: black;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	#div-cursos {
+		margin-right: 0;
+	}
+
+	#div-segundo-grau,
+	#div-faculdade {
+		margin-left: 0;
+	}
+
+	#nav{
+		flex-direction: column;
+		height: 200px;
+	}
+
+	#nav li{
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+	}
+
+	#rodape{
+		font-size: 1em;
+	}
+
+	#rodape img{
+		width: 20px;
+	}
+
+	h1{
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#hero{
+		flex-direction: column;
+		padding: 7%;
+		background-image: linear-gradient(90deg, rgba(196, 197, 230, 0.88), rgba(196, 197, 230, 0.88)), url("./faz-tudo.webp");
+	}
+
+	#div-objetivos,
+	#div-foto{
+		width: 100%;
+	}
+
+	#div-objetivos{
+		padding: 0;
+	}
+
+	#exp-profissional{
+		background-position: left;
+	}
+
+	#exp-profissional p{
+		font-size: 1em;
+	}
+
+	#rodape{
+		background-position: bottom;
+	}
 }
